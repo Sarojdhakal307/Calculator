@@ -74,14 +74,22 @@ buttonop.forEach(buttonop => {
  });
 });
 clear.addEventListener('click', function(e){
- 
-  currentVal = "";
+  let currentVal = "";
+let operator = null;
+let btndecidx = 0;
+let opidx = 0;
+let btnopidex = 0;
+let result = null;
+
+  output1.value = "";
   firstVal = null;
   operator = null;
-  output.value = "";
-  output1.value = "";
-
   btndecidx = 0;
+  opidx = 0;
+  btnopidex = 0;
+  currentVal = null
+  output.value = null;
+
   console.log(output.value)
 });
 buttonsnum.forEach(buttonsnum => {
